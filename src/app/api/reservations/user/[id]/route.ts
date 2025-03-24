@@ -54,10 +54,10 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
         .sort({ createdAt: -1 })
         .toArray();
       
-      const reservationsWithUserName = reservations.map((reservation: Reservation) => ({
+      const reservationsWithUserName = reservations.map((reservation) => ({
         ...reservation,
         userName
-      }));
+      })) as (Reservation & { userName: string })[];
       
       return NextResponse.json(reservationsWithUserName);
     } else {

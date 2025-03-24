@@ -36,7 +36,7 @@ export default function TopMenu() {
             <div className="flex space-x-4 ml-auto">
                 <TopMenuItem
                 title="ABOUT US"
-                pageRef="/about"
+                pageRef="/aboutus"
                 styles="bg-[#4F3622] text-white text-xs rounded-full drop-shadow-md px-4 py-2"
                 onMouseOver={(e) => onBrownMouseAction(e)}
                 onMouseOut={(e) => onBrownMouseAction(e)}
