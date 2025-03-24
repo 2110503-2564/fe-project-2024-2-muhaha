@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { GitHub, LinkedIn, Code, Brush, Storage } from "@mui/icons-material";
 
+//AboutUs page
 const AboutUs = () => {
     const teamMembers = [
         {
