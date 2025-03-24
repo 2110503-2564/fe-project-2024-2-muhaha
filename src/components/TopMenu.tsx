@@ -37,17 +37,10 @@ export default function TopMenu() {
                 <TopMenuItem
                 title="ABOUT US"
                 pageRef="/aboutus"
-                styles="bg-[#4F3622] text-white text-xs rounded-full drop-shadow-md px-4 py-2"
-                onMouseOver={(e) => onBrownMouseAction(e)}
-                onMouseOut={(e) => onBrownMouseAction(e)}
-                onClick={() => router.push("/aboutus")}
-                />
-                <TopMenuItem
-                title="RESERVE"
-                pageRef="/reserve"
                 styles="bg-white text-[#4F3622] text-xs rounded-full drop-shadow-md px-4 py-2"
                 onMouseOver={(e) => onWhiteMouseAction(e)}
                 onMouseOut={(e) => onWhiteMouseAction(e)}
+                onClick={() => router.push("/aboutus")}
                 />
                 {isAuthenticated ? (
                 <TopMenuItem
