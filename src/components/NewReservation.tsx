@@ -42,6 +42,7 @@ interface CustomSession {
   expires?: string;
 }
 
+//add new reservation
 const NewReservation = () => {
   const router = useRouter();
   const { data: session } = useSession() as { data: CustomSession | null };
