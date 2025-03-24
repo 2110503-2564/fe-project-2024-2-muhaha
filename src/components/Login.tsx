@@ -6,6 +6,7 @@ import Image from "next/image";
 import { MailOutline, LockOutlined } from "@mui/icons-material";
 import { useRouter } from "next/navigation";
 
+//Login page
 export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

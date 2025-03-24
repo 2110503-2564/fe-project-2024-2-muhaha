@@ -5,6 +5,7 @@ import { MailOutline, LockOutlined, CalendarToday, Phone } from "@mui/icons-mate
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+//Signup page
 export default function Signup() {
     const [formData, setFormData] = useState({
         name: "",
